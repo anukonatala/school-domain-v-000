@@ -17,6 +17,10 @@ class School
     end
   end
   
+  def grade
+  
+  end
+  
   def sort
     @roster.sort.to_h
   end
