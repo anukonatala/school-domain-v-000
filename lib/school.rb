@@ -3,7 +3,7 @@
 class School
   
   
-  def initialize(hash)
+  def initialize()
     @hash= {}
   end
   def add_student(name, grade)
