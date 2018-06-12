@@ -1,26 +1,27 @@
 # code here!
 
 class School
+  attr_accessor :name, :roster
   
-  
-  def initialize()
-    @hash= {}
+  def initialize(name)
+    @name = name
+    @roster= {}
   end
   
   def add_student(name, grade)
-    if  hash.key?(grade)
-      @hash[grade] << name
+    if  @roster.key?(grade)
+      @roster[grade] << name
     else
-      @hash[grade] = []
+      @roster[grade] = []
     end
   end
   
   def roster
-    @hash
+    @roster
   end
   
   def sort
-    @hash.sort.to_h
+    @roster.sort.to_h
   end
 
 end
