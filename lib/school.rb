@@ -4,22 +4,22 @@ class School
   hash = {}
   
   def initialize(hash)
-  
+    @hash= hash
   end
   def add_student(name, grade)
     if  hash.key?(grade)
-      hash[grade] << name
+      @hash[grade] << name
     else
-      hash[grade] = []
+      @hash[grade] = []
     end
   end
   
   def roster
-    hash
+    @hash
   end
   
   def sort
-    hash.sort.to_h
+    @hash.sort.to_h
   end
 
 end
