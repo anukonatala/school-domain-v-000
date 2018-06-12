@@ -6,6 +6,7 @@ class School
   def initialize()
     @hash= {}
   end
+  
   def add_student(name, grade)
     if  hash.key?(grade)
       @hash[grade] << name
