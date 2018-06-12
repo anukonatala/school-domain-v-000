@@ -24,6 +24,7 @@ class School
   def sort
     new_roster = {}
     @roster.each { |key, value|  new_roster[key] = value.sort}
+    new_roster
   end
 
 end
