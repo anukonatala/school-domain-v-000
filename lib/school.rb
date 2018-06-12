@@ -1,7 +1,7 @@
 # code here!
 
 class School
-  hash = {}
+  attr_reader :title, 
   
   def initialize(hash)
     @hash= hash
